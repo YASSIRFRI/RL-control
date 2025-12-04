@@ -1,7 +1,3 @@
-"""
-Evaluate a trained PPO agent on the KUKA joint control task.
-"""
-
 import argparse
 import numpy as np
 import torch
@@ -14,7 +10,7 @@ import gymnasium as gym
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model-path", type=str, default="models/best_model.pt",
+    parser.add_argument("--model-path", type=str, default="models/final_model.pt",
         help="path to the trained model")
     parser.add_argument("--num-episodes", type=int, default=10,
         help="number of episodes to evaluate")
